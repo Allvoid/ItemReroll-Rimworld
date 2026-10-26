@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Item Reroll</name>
+  <author>Allvoid</author>
+  <description>Adds a Reroll button to items in development mode. It re-rolls an item's random properties within the same range the game uses when it creates the item.
+
+Mod settings choose what gets re-rolled:
+- Weapon traits of unique weapons (Odyssey) and persona weapons (Royalty). On by default.
+- Name and color of unique weapons. On by default.
+- Quality of unique weapons.
+- Material.
+- Art description.
+
+Relics keep their weapon type, material, Legendary quality and name; only their traits change.
+
+No Harmony needed. The mod stores nothing in the save, so it can be removed at any time.
+
+Dice icon: Board Game Icons by Kenney (kenney.nl), CC0.</description>
+  <packageId>Allvoid.itemreroll</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+</ModMetaData>

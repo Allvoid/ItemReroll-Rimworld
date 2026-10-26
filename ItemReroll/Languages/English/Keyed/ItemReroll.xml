@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ItemReroll_Command>Reroll</ItemReroll_Command>
+  <ItemReroll_CommandDesc>Development mode: re-roll this item's random properties within the same range the game uses when it creates the item. What gets re-rolled is chosen in the mod settings.</ItemReroll_CommandDesc>
+  <ItemReroll_CommandDescRelic>Development mode: re-roll this relic's weapon traits. The weapon type, material and Legendary quality are set by the ideoligion and stay as they are.</ItemReroll_CommandDescRelic>
+  <ItemReroll_Done>{0}: re-rolled.</ItemReroll_Done>
+
+  <ItemReroll_SettingsIntro>The Reroll button appears on items only in development mode. Choose what it re-rolls. Every roll stays inside the range the game itself uses for that item.</ItemReroll_SettingsIntro>
+  <ItemReroll_Traits>Weapon traits</ItemReroll_Traits>
+  <ItemReroll_TraitsDesc>Unique weapons (Odyssey, 1-3 traits) and persona weapons (Royalty, 1-2 traits). Traits are drawn from the same pool as the game: by weapon category, with the same weights, and without conflicting traits. A bonded persona weapon keeps its bond unless a new trait forbids bonding.</ItemReroll_TraitsDesc>
+  <ItemReroll_NameAndColor>Name and color of unique weapons</ItemReroll_NameAndColor>
+  <ItemReroll_NameAndColorDesc>A new random color (or the color a trait forces) and a new name built from it. Not applied to relics: their name comes from the ideoligion. When off, the color still changes if a trait forces one.</ItemReroll_NameAndColorDesc>
+  <ItemReroll_Quality>Quality of unique weapons</ItemReroll_Quality>
+  <ItemReroll_QualityDesc>Rolled the same way the game rolls a fresh unique weapon. Only unique weapons: for other items the game does not remember which quality range the item came from. Relics always stay Legendary.</ItemReroll_QualityDesc>
+  <ItemReroll_Stuff>Material</ItemReroll_Stuff>
+  <ItemReroll_StuffDesc>Any other material the game may generate this item from, weighted the same way. Hit points keep their percentage. Not applied to relics: their material is set by the ideoligion.</ItemReroll_StuffDesc>
+  <ItemReroll_Art>Art description</ItemReroll_Art>
+  <ItemReroll_ArtDesc>A new art title and description from a random tale, for items good enough to carry art. The author stays the same.</ItemReroll_ArtDesc>
+  <ItemReroll_RelicNote>Relics: only weapon traits are re-rolled (and the color, if a trait forces it). Weapon type, material, quality and name never change.</ItemReroll_RelicNote>
+</LanguageData>
