@@ -1,4 +1,4 @@
-# Item Reroll
+# Ar: Item Reroll
 
 RimWorld 1.6 and 1.7 mod. Adds a **Reroll** button to items in development mode. It re-rolls an item's random properties
 within the same range the game uses when it creates the item.
