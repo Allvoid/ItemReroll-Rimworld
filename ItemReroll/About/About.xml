@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Item Reroll</name>
+  <name>Ar: Item Reroll</name>
   <author>Allvoid</author>
   <description>Adds a Reroll button to items in development mode. It re-rolls an item's random properties within the same range the game uses when it creates the item.
 
@@ -15,7 +15,11 @@ Relics keep their weapon type, material, Legendary quality and name; only their 
 
 No Harmony needed. The mod stores nothing in the save, so it can be removed at any time.
 
-Dice icon: Board Game Icons by Kenney (kenney.nl), CC0.</description>
+Dice icon: Board Game Icons by Kenney (kenney.nl), CC0.
+
+Добавляет кнопку «Переброс» вещам в режиме разработчика: она заново бросает случайные свойства вещи в тех же пределах, что и игра при создании вещи (черты, имя и цвет, качество уникального оружия, материал, описание произведения искусства — что бросать, выбирается в настройках).
+
+RimWorld 1.6 and 1.7. English and Russian. / Русский и английский.</description>
   <packageId>Allvoid.itemreroll</packageId>
   <supportedVersions>
     <li>1.6</li>
