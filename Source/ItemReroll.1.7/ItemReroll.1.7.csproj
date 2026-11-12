@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- RimWorld 1.7 (Waylith engine, .NET 10) build of the same sources as ..\ItemReroll (that one is the 1.6 build). -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>ItemReroll</AssemblyName>
+    <RootNamespace>ItemReroll</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DefineConstants>$(DefineConstants);RW17</DefineConstants>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <Deterministic>true</Deterministic>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\..\ItemReroll\1.7\Assemblies\</OutputPath>
+    <NoWarn>$(NoWarn);CS0618;CS0649;CS0169;CS0414;CS0162;CS8981</NoWarn>
+    <!-- The Steam folder holds 1.7 (branch unstable); the game dlls sit next to RimWorld.exe. -->
+    <RimWorld17 Condition="'$(RimWorld17)' == ''">W:\SteamLibrary\steamapps\common\RimWorld</RimWorld17>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\ItemReroll\**\*.cs" Exclude="..\ItemReroll\obj\**;..\ItemReroll\bin\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(RimWorld17)\Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(RimWorld17)\UnityStubs.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+</Project>

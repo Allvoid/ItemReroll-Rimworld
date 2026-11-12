@@ -1,6 +1,6 @@
 # Item Reroll
 
-RimWorld 1.6 mod. Adds a **Reroll** button to items in development mode. It re-rolls an item's random properties
+RimWorld 1.6 and 1.7 mod. Adds a **Reroll** button to items in development mode. It re-rolls an item's random properties
 within the same range the game uses when it creates the item.
 
 [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3824069594)
@@ -25,9 +25,15 @@ Relics keep their weapon type, material, Legendary quality and name; only their 
 
 ## Building
 
-`build.cmd` builds `ItemReroll\Assemblies\ItemReroll.dll` with MSBuild (Visual Studio 2022) and copies the mod into
-the RimWorld `Mods` folder. Set the paths at the top of `build.cmd` and `RimWorldManaged` in
-`Source\ItemReroll\ItemReroll.csproj` to your RimWorld install.
+`build.cmd` builds `ItemReroll.dll` twice and copies the mod into the RimWorld `Mods` folders (the Steam folder and,
+if it exists, the 1.6 copy `W:\SteamLibrary\RimWorld-1.6\Mods`):
+
+- `ItemReroll\1.6\Assemblies` for RimWorld 1.6: MSBuild (Visual Studio 2022), .NET Framework 4.7.2,
+  `Source\ItemReroll\ItemReroll.csproj` (`RimWorldManaged`: the 1.6 copy of the game);
+- `ItemReroll\1.7\Assemblies` for RimWorld 1.7 (the Waylith engine): `dotnet build`, .NET 10,
+  `Source\ItemReroll.1.7\ItemReroll.1.7.csproj` (the same sources; `RimWorld17`: the game's Steam folder).
+
+`LoadFolders.xml` makes each game load its own dll.
 
 ## Credits
 
